@@ -185,7 +185,7 @@ else{
     $db = new PDO('mysql:host=localhost;dbname=u47505', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
 
     try {
-      $stmt = $db->prepare("INSERT INTO users SET name = ?, email = ?, date = ?, gender = ?, limbs = ?, bio = ?, policy = ?");
+      $stmt = $db->prepare("INSERT INTO clients SET name = ?, email = ?, date = ?, gender = ?, limbs = ?, bio = ?, policy = ?");
       $stmt->execute(array($name, $email, $date, $radio1, $radio2, $bio, $check));
       $power_id = $db->lastInsertId();
       

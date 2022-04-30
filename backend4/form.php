@@ -57,7 +57,7 @@
     
                                     <label>
                                         День рождения:<br />
-                                        <input name="date" <?php if ($errors['date'] || $errors['3']) {print 'class="error"' ;} ?> value="<?php print $values['date']; ?>" />
+                                        <input type="date" name="date" <?php if ($errors['date'] || $errors['3']) {print 'class="error"' ;} ?> value="<?php print $values['date']; ?>" />
                                     </label><br />
                                     Пол:<br />
                                     <label><input type="radio" name="radio-group-1" <?php if ($errors['radio-group-1']) {print 'class="error"' ;} if($values['radio-group-1']=="М"){print "checked='checked'";}?> value="М" />
